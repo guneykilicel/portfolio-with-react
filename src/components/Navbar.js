@@ -1,7 +1,8 @@
 import logo from "../assets/img/logo.png"
 import moon from "../assets/img/moon.png"
+import MobileMenu from "./MobileMenu";
 const Navbar = () => {
-    return(
+    return (
         <nav className="w-full fixed top-0 bg-white">
             <div className="container mx-auto py-5 flex items-center justify-between">
                 <div className="flex items-center gap-2">
@@ -25,7 +26,8 @@ const Navbar = () => {
                         <a href="#">contact</a>
                     </li>
                 </ul>
-            <img className="hidden md:block w-5 cursor-pointer" src={moon} alt="" />
+                <img className="hidden md:block w-5 cursor-pointer" src={moon} alt="" />
+                <MobileMenu />
             </div>
         </nav>
     )
